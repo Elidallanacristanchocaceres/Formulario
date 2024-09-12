@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <h1>Realizar Encuesta</h1>
+    <label>
+        <input type="checkbox" id="pregunta">
+        ¿Quieres realizar esta encuesta?
+    </label>
+
+    <form id="Form" style="display: none;">
+        <h2>Encuesta</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+
+        <label for="Telefono">Telefono:</label>
+        <input type="number" id="Telefono" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required>
+
+        <label for="feedback">Comentarios:</label>
+        <textarea id="feedback" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="results" style="display: none;">
+        <h2>Resultados de la Encuesta</h2>
+        <p><strong>Nombre:</strong> <span id="resultName"></span></p>
+        <p><strong>Edad:</strong><span id="resultEdad"></span></p>
+        <p><strong>Telefono:</strong><span id="resulTelefono"></span></p>
+        <p><strong>Correo:</strong> <span id="resultEmail"></span></p>
+        <p><strong>Comentarios:</strong> <span id="resultFeedback"></span></p>
+    </div>
+
+    
+</body>
+</html>
